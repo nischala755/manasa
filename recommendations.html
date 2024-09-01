@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recommendations - Mental Health Platform</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Your Personalized Recommendations</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="assessment.html">Assessment</a></li>
+                <li><a href="recommendations.html">Recommendations</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Please answer the following questions:</h2>
+        <form id="recommendationForm">
+            <label>1. How often do you feel stressed or anxious?</label><br>
+            <input type="radio" id="q1_a" name="q1" value="often"> Often<br>
+            <input type="radio" id="q1_b" name="q1" value="sometimes"> Sometimes<br>
+            <input type="radio" id="q1_c" name="q1" value="rarely"> Rarely<br><br>
+
+            <label>2. How well do you sleep at night?</label><br>
+            <input type="radio" id="q2_a" name="q2" value="poor"> Poorly<br>
+            <input type="radio" id="q2_b" name="q2" value="average"> Average<br>
+            <input type="radio" id="q2_c" name="q2" value="well"> Well<br><br>
+
+            <label>3. How often do you engage in physical exercise?</label><br>
+            <input type="radio" id="q3_a" name="q3" value="daily"> Daily<br>
+            <input type="radio" id="q3_b" name="q3" value="weekly"> Weekly<br>
+            <input type="radio" id="q3_c" name="q3" value="rarely"> Rarely<br><br>
+
+            <input type="button" value="Get Recommendations" onclick="getRecommendations()">
+        </form>
+
+        <h2>Your Recommendations:</h2>
+        <div id="recommendations"></div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Mental Health Platform. All rights reserved.</p>
+    </footer>
+
+    <script src="js/recommendations.js"></script>
+</body>
+</html>

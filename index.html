@@ -3,92 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mental Health Support</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Mental Health Platform</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header>
-        <h1>Welcome to Mental Health Support</h1>
+        <h1>Welcome to the Mental Health Platform</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="assessment.html">Assessment</a></li>
+                <li><a href="recommendations.html">Recommendations</a></li>
+                <li><a href="teleconsultation.html">Teleconsultation</a></li>
+            </ul>
+        </nav>
     </header>
-    
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#assessment">Assessment</a></li>
-            <li><a href="#progress">Progress</a></li>
-            <li><a href="#resources">Resources</a></li>
-        </ul>
-    </nav>
-    
-    <section id="home">
-        <h2>Home</h2>
-        <form id="registration-form" class="form">
-            <h3>Register</h3>
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username" required>
-
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
-
-            <button type="submit">Register</button>
-            <div id="registration-feedback"></div>
-        </form>
-
-        <form id="login-form" class="form">
-            <h3>Login</h3>
-            <label for="login-username">Username:</label>
-            <input type="text" id="login-username" name="username" required>
-
-            <label for="login-password">Password:</label>
-            <input type="password" id="login-password" name="password" required>
-
-            <button type="submit">Login</button>
-            <div id="login-feedback"></div>
-        </form>
-    </section>
-
-    <section id="assessment">
-        <h2>Self-Assessment</h2>
-        <form id="assessment-form" class="form">
-            <label for="question1">How often do you feel anxious?</label>
-            <select id="question1" name="question1">
-                <option value="never">Never</option>
-                <option value="sometimes">Sometimes</option>
-                <option value="often">Often</option>
-                <option value="always">Always</option>
-            </select>
-
-            <button type="submit">Submit</button>
-        </form>
-
-        <div id="feedback"></div>
-    </section>
-
-    <section id="progress">
-        <h2>Your Progress</h2>
-        <div id="progress-tracking">
-            <p>Completed Modules: <span id="completed-modules">0</span></p>
-        </div>
-    </section>
-
-    <section id="resources">
-        <h2>Resources</h2>
-        <div class="module">
-            <h3>Module 1: Understanding Anxiety</h3>
-            <p>Learn about the signs and symptoms of anxiety...</p>
-            <button class="complete-module">Mark as Complete</button>
-        </div>
-        <div class="module">
-            <h3>Module 2: Coping Strategies</h3>
-            <p>Explore different strategies to cope with anxiety...</p>
-            <button class="complete-module">Mark as Complete</button>
-        </div>
-    </section>
-
+    <main>
+        <p>Explore our platform to assess your mental health and get personalized recommendations.</p>
+    </main>
     <footer>
-        <p>&copy; 2024 Mental Health Support</p>
+        <p>&copy; 2024 Mental Health Platform. All rights reserved.</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="https://cdn.botpress.cloud/webchat/v2.1/inject.js"></script>
+    <script src="https://mediafiles.botpress.cloud/b29aecf7-1634-4f42-98cc-3d5bfe486990/webchat/v2.1/config.js"></script>
 </body>
 </html>

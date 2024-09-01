@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teleconsultation - Mental Health Platform</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Teleconsultation</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="teleconsultation.html">Teleconsultation</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Schedule a Consultation</h2>
+        <form action="schedule_consultation.php" method="POST">
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required><br>
+
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time" required><br>
+
+            <input type="submit" value="Schedule">
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 Mental Health Platform. All rights reserved.</p>
+    </footer>
+</body>
+</html>

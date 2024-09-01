@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assessment - Mental Health Platform</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>M.I.N.I. Assessment</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="assessment.html">Assessment</a></li>
+                <li><a href="recommendations.html">Recommendations</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form action="submit_assessment.php" method="POST">
+            <label>Question 1: Have you felt down, depressed, or hopeless in the last two weeks?</label><br>
+            <input type="radio" id="q1_yes" name="q1" value="yes">
+            <label for="q1_yes">Yes</label><br>
+            <input type="radio" id="q1_no" name="q1" value="no">
+            <label for="q1_no">No</label><br>
+
+            <!-- Add more questions as needed -->
+
+            <input type="submit" value="Submit">
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 Mental Health Platform. All rights reserved.</p>
+    </footer>
+</body>
+</html>
